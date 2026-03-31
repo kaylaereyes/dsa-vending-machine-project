@@ -5,11 +5,55 @@ This project is a Java-based vending machine simulation designed to demonstrate 
 The purpose of this project is to apply fundamental programming techniques in a real-world scenario while reinforcing concepts such as arrays, control flow, and object-oriented design.
 
 ## Objectives
+
+The goal of this project is to simulate a vending machine system while analyzing how different data structures and algorithms impact performance, scalability, and efficiency in handling transactions and inventory.
+
+In real-world systems, vending machines must quickly process user input, search for items, and manage inventory efficiently. The choice of underlying data structures can significantly affect response time, memory usage, and code maintainability.
+
+This project aims to explore these trade-offs by implementing and comparing multiple approaches to solving the same problem.
+
 - Develop a functional vending machine simulation using Java  
 - Apply array-based data storage for items and pricing  
 - Implement conditional logic to process user transactions  
 - Practice input validation and error handling  
-- Write clean, modular, and maintainable code  
+- Write clean, modular, and maintainable code
+
+## Three Problem based Solutions
+
+### Solution 1: Array-Based Implementation
+Store items in arrays (names, prices, quantities)
+Use linear search for item selection  
+
+Pros:
+Simple to implement
+Low overhead  
+
+Cons:
+Slower search time (O(n))
+Less scalable  
+
+### Solution 2: ArrayList-Based Implementation
+Use Java ArrayList for dynamic storage
+Improved flexibility over static arrays  
+
+Pros:
+Dynamic resizing
+Easier data management  
+
+Cons:
+Still linear search (O(n))
+Slightly higher memory overhead  
+
+### Solution 3: HashMap-Based Implementation
+Store items using key-value pairs (e.g., item code → item object)
+
+Pros:
+Fast lookup (O(1))
+Scalable for large inventories  
+
+Cons:
+More complex implementation
+Requires understanding of hashing  
 
 ## Core Features (MVP - Phase 1)
 - Display a list of available items with corresponding prices  
