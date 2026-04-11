@@ -99,7 +99,7 @@ docs/ proposal.md resources.md (may be consolidated to readme.md in future itera
 ## Status
 Project is being:
 - [x] Planned
-- [ ] Proposed
+- [x] Proposed
 - [ ] Programmed
 - [ ] Tested
 - [ ] Submitted
