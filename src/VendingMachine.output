@@ -1,0 +1,41 @@
+===== TEAM PROJECT: VENDING MACHINE SIMULATION =====
+
+Array-Based Inventory:
+A1 - Coke ($1.50) Quantity: 5
+B2 - Chips ($2.00) Quantity: 4
+C3 - Candy ($1.25) Quantity: 6
+
+Testing Array-Based Implementation:
+Dispensing Coke...
+Change returned: $0.50
+
+ArrayList-Based Inventory:
+A1 - Coke ($1.50) Quantity: 5
+B2 - Chips ($2.00) Quantity: 4
+C3 - Candy ($1.25) Quantity: 6
+
+Testing ArrayList-Based Implementation:
+Dispensing Chips...
+Change returned: $0.50
+
+HashMap-Based Inventory:
+A1 - Coke ($1.50) Quantity: 5
+B2 - Chips ($2.00) Quantity: 4
+C3 - Candy ($1.25) Quantity: 6
+
+Testing HashMap-Based Implementation:
+Dispensing Candy...
+Change returned: $0.75
+
+===== ADDITIONAL TEST CASES =====
+
+Testing Array-Based Implementation:
+Invalid selection.
+
+Testing ArrayList-Based Implementation:
+Insufficient funds. $0.50 more needed.
+
+Testing HashMap-Based Implementation:
+Insufficient funds. $1.00 more needed.
+
+Program completed successfully.
