@@ -1,27 +1,28 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        VendingMachine vm = new VendingMachine();
+        VendingMachine vendingMachine = new VendingMachine();
 
-        while (true) {
-            vm.displayItems();
+        System.out.println("===== TEAM PROJECT: VENDING MACHINE SIMULATION =====\n");
 
-            System.out.println("\nEnter item number to buy (-1 to exit): ");
-            int choice = input.nextInt();
+        vendingMachine.displayArrayInventory();
+        vendingMachine.buyUsingArray("A1", 2.00);
 
-            if (choice == -1) {
-                System.out.println("Goodbye!");
-                break;
-            }
+        System.out.println();
 
-            System.out.println("Insert money: ");
-            double money = input.nextDouble();
+        vendingMachine.displayArrayListInventory();
+        vendingMachine.buyUsingArrayList("B2", 2.50);
 
-            vm.buyItem(choice, money);
-        }
+        System.out.println();
 
-        input.close();
+        vendingMachine.displayHashMapInventory();
+        vendingMachine.buyUsingHashMap("C3", 2.00);
+
+        System.out.println("\n===== ADDITIONAL TEST CASES =====");
+
+        vendingMachine.buyUsingArray("Z9", 5.00);
+        vendingMachine.buyUsingArrayList("A1", 1.00);
+        vendingMachine.buyUsingHashMap("B2", 1.00);
+
+        System.out.println("\nProgram completed successfully.");
     }
 }
