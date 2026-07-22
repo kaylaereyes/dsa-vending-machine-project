@@ -100,6 +100,6 @@ docs/ proposal.md resources.md (may be consolidated to readme.md in future itera
 Project is being:
 - [x] Planned
 - [x] Proposed
-- [ ] Programmed
-- [ ] Tested
-- [ ] Submitted
+- [x] Programmed
+- [x] Tested
+- [x] Submitted
